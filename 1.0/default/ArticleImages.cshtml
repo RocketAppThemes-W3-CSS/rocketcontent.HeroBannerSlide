@@ -25,10 +25,7 @@
 <div class="w3-row imagelistdatasection">
 
     <div class="w3-bar">
-        @if (datalist.Count < 1)
-        {
-            <div class="w3-button w3-bar-item w3-theme-action w3-padding" onclick="$('#articleimageselect').show();">@ButtonIcon(ButtonTypes.add)</div>
-        }
+        <div class="w3-button w3-bar-item w3-theme-action w3-padding" onclick="$('#articleimageselect').show();">@ButtonIcon(ButtonTypes.add)</div>
         <div class="w3-button w3-bar-item w3-pale-yellow w3-padding simplisity_itemundo" s-recylebin="imagelistbin" s-return="#imagelistdata" s-removelist=".@articleData.ImageListName" style="display: none;">@ButtonIcon(ButtonTypes.undo)</div>
     </div>
 
